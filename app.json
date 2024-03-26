@@ -1,11 +1,6 @@
-
 {
-
     "name": "MG",
-
     "description": "A Modular telegram bot.",
-
-    "repository": "https://github.com/imacekun/pyrotxt",
     "buildpacks":[
         {
             "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
@@ -18,45 +13,27 @@
         }
     ],
     "keywords": [
-
-       
-
         "telegram bot",
-
         "pyrogram"
-
     ],
-
     "env": {
 
         "BOT_TOKEN": {
-
-            "description": "7099461621:AAHXFf2xq5Il41WD2Q-fOlMQXzCS3e3_9QQ"
+            "required": true,
+            "description": "Your Bot token from @Botfather"
 
         },
 
         "API_ID": {
-
-            "description": "23004101"
+            "required": true,
+            "description": "Your API_ID from https://my.telegram.org/apps"
 
         },
 
         "API_HASH": {
-
-            "description": "a2e157e87728053027cbb156e41a832a"
-
+            "required": true,
+            "description": "Your API_HASH from https://my.telegram.org/apps"
         }
 
-    },
-
-    "buildpacks": [
-
-        {
-
-            "url": "heroku/python"
-
-        }
-
-    ]
-
+    }
 }
